@@ -1,6 +1,8 @@
 package tab;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
 
@@ -60,4 +62,53 @@ public class HomePage {
     public void clickCloseCookie(){
         driver.findElement(closeCookie).click();
     }
+
+    private By textOfAccordionButton1 = By.id("accordion__panel-0");
+
+    private By textOfAccordionButton2 = By.id("accordion__panel-1");
+
+    private By textOfAccordionButton3 = By.id("accordion__panel-2");
+
+    private By textOfAccordionButton4 = By.id("accordion__panel-3");
+
+    private By textOfAccordionButton5 = By.id("accordion__panel-4");
+
+    private By textOfAccordionButton6 = By.id("accordion__panel-5");
+
+    private By textOfAccordionButton7 = By.id("accordion__panel-6");
+
+    private By textOfAccordionButton8 = By.id("accordion__panel-7");
+
+    public void visabilityOfAccordionButton1(){
+        new WebDriverWait(driver, 3).until(ExpectedConditions.visibilityOfElementLocated(textOfAccordionButton1));
+    }
+
+    public void visabilityOfAccordionButton2(){
+        new WebDriverWait(driver, 3).until(ExpectedConditions.visibilityOfElementLocated(textOfAccordionButton2));
+    }
+
+    public void visabilityOfAccordionButton3(){
+        new WebDriverWait(driver, 3).until(ExpectedConditions.visibilityOfElementLocated(textOfAccordionButton3));
+    }
+
+    public void visabilityOfAccordionButton4(){
+        new WebDriverWait(driver, 3).until(ExpectedConditions.visibilityOfElementLocated(textOfAccordionButton4));
+    }
+
+    public void visabilityOfAccordionButton5(){
+        new WebDriverWait(driver, 3).until(ExpectedConditions.visibilityOfElementLocated(textOfAccordionButton5));
+    }
+
+    public void visabilityOfAccordionButton6(){
+        new WebDriverWait(driver, 3).until(ExpectedConditions.visibilityOfElementLocated(textOfAccordionButton6));
+    }
+
+    public void visabilityOfAccordionButton7(){
+        new WebDriverWait(driver, 3).until(ExpectedConditions.visibilityOfElementLocated(textOfAccordionButton7));
+    }
+
+    public void visabilityOfAccordionButton8(){
+        new WebDriverWait(driver, 3).until(ExpectedConditions.visibilityOfElementLocated(textOfAccordionButton8));
+    }
 }
+

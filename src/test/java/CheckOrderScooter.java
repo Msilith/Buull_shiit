@@ -60,7 +60,7 @@ public class CheckOrderScooter
         orderPage.inputMetro();
         driver.findElement(By.xpath(".//button[@value='58']")).click();
         orderPage.clickNextButton();
-        orderPage.inputComment("•◘♣○♠♥☻");
+        orderPage.inputComment("J999!@#%^*()_';{}}][ ");
         orderPage.clickColor();
         orderPage.clickPeriod();
         orderPage.inputDate("23.04.1874");
