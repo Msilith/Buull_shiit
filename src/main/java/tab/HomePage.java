@@ -12,51 +12,51 @@ public class HomePage {
     // локатор для кнопки «Закрыть» куки в футере
     private By closeCookie = By.xpath(".//button[text()='да все привыкли']");
     // локаторы для кнопок «Вопросы о важном»
-    private By FAQ1 = By.xpath("//*[@id='accordion__heading-0']");
-    private By FAQ2 = By.xpath("//*[@id='accordion__heading-1']");
-    private By FAQ3 = By.xpath("//*[@id='accordion__heading-2']");
-    private By FAQ4 = By.xpath("//*[@id='accordion__heading-3']");
-    private By FAQ5 = By.xpath("//*[@id='accordion__heading-4']");
-    private By FAQ6 = By.xpath("//*[@id='accordion__heading-5']");
-    private By FAQ7 = By.xpath("//*[@id='accordion__heading-6']");
-    private By FAQ8 = By.xpath("//*[@id='accordion__heading-7']");
+    private By accordionButton1 = By.xpath("//*[@id='accordion__heading-0']");
+    private By accordionButton2 = By.xpath("//*[@id='accordion__heading-1']");
+    private By accordionButton3 = By.xpath("//*[@id='accordion__heading-2']");
+    private By accordionButton4 = By.xpath("//*[@id='accordion__heading-3']");
+    private By accordionButton5 = By.xpath("//*[@id='accordion__heading-4']");
+    private By accordionButton6 = By.xpath("//*[@id='accordion__heading-5']");
+    private By accordionButton7 = By.xpath("//*[@id='accordion__heading-6']");
+    private By accordionButton8 = By.xpath("//*[@id='accordion__heading-7']");
 
     public HomePage (WebDriver driver){
         this.driver = driver;
     }
+
+
     public void clickOrderTopButton(){
         driver.findElement(orderTopButton).click();
     }
 
-    public void openFAQ1(){
-        driver.findElement(FAQ1).click();
+    public void openAccordionButton1(){
+        driver.findElement(accordionButton1).click();
     }
-    public void openFAQ2(){
-        driver.findElement(FAQ2).click();
+    public void openAccordionButton2(){
+        driver.findElement(accordionButton2).click();
     }
-    public void openFAQ3(){
-        driver.findElement(FAQ3).click();
+    public void openAccordionButton3(){
+        driver.findElement(accordionButton3).click();
     }
-    public void openFAQ4(){
-        driver.findElement(FAQ4).click();
+    public void openAccordionButton4(){
+        driver.findElement(accordionButton4).click();
     }
-    public void openFAQ5(){
-        driver.findElement(FAQ5).click();
+    public void openAccordionButton5(){
+        driver.findElement(accordionButton5).click();
     }
-    public void openFAQ6(){
-        driver.findElement(FAQ6).click();
+    public void openAccordionButton6(){
+        driver.findElement(accordionButton6).click();
     }
-    public void openFAQ7(){
-        driver.findElement(FAQ7).click();
+    public void openAccordionButton7(){
+        driver.findElement(accordionButton7).click();
     }
-    public void openFAQ8(){
-        driver.findElement(FAQ8).click();
+    public void openAccordionButton8(){
+        driver.findElement(accordionButton8).click();
     }
-
     public void clickOrderMiddleButton(){
         driver.findElement(orderMiddleButton).click();
     }
-
     public void clickCloseCookie(){
         driver.findElement(closeCookie).click();
     }

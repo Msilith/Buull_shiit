@@ -29,6 +29,8 @@ public class OrderPage {
     // Кнопка "Да"
     private By yesButton = By.xpath("//*[@id='root']/div/div[2]/div[5]/div[2]/button[2]");
 
+    private By setPeriod = By.xpath("//*[@id='root']/div/div[2]/div[2]/div[2]/div[2]/div[2]");
+
 
     public OrderPage(WebDriver driver) {
         this.driver = driver;
@@ -64,7 +66,7 @@ public class OrderPage {
     public void clickPeriod()
     {
         driver.findElement(inputPeriod).click();
-        driver.findElement(By.xpath("//*[@id='root']/div/div[2]/div[2]/div[2]/div[2]/div[2]")).click();
+        driver.findElement(setPeriod).click();
     }
     public void clickOrder()
     {
