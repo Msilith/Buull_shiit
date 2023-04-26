@@ -45,7 +45,7 @@ public class CheckOrderScooter
         orderPage.clickOrder();
         orderPage.clickYes();
 
-        String answer =   driver.findElement(By.xpath("/html/body/div/div/div[2]/div[5]/div[1]")).getText();
+        String answer =   driver.findElement(By.className("Order_ModalHeader__3FDaJ")).getText();
         assertEquals("Заказ оформлен", answer);
     }
 
@@ -67,7 +67,8 @@ public class CheckOrderScooter
         orderPage.clickOrder();
         orderPage.clickYes();
 
-        String answer =   driver.findElement(By.xpath("/html/body/div/div/div[2]/div[5]/div[1]")).getText();
+        String answer =   driver.findElement(By.className("Order_ModalHeader__3FDaJ")).getText();
+
         assertEquals("Заказ оформлен", answer);
     }
 

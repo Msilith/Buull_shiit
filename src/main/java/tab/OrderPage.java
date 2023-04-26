@@ -18,18 +18,20 @@ public class OrderPage {
     private By nextButton = By.xpath("//div[contains(@class,'Order_NextButton')]//button[text()='Далее']");
     // Поле "Когда привезти самокат"
     private By inputDate = By.xpath(".//input[@placeholder='* Когда привезти самокат']");
-    // Поле "Срок аренды"
-    private By inputPeriod = By.xpath(".//div/div[2]/div[2]/div[2]/div[1]/div[1]");
+    //Локатор поля "Срок аренды"
+    private final By rentalPeriod = By.className("Dropdown-placeholder");
+    //Локатор элемента выпадающего списка поля "Срок аренды"
+    private final By rentalPeriodChoice = By.xpath(".//div[@class = 'Dropdown-menu']/div[@class = 'Dropdown-option']");
     // Селектор выбора цвета
-    private By selectColor = By.xpath("/html/body/div/div/div[2]/div[2]/div[3]/label[1]");
+    private By selectColor = By.className("Checkbox_Input__14A2w");
     // Поле "Комментарий для курьера"
     private By inputComment = By.xpath(".//input[@placeholder='Комментарий для курьера']");
     // Кнопка "Заказать"
     private By orderButton = By.xpath("//div[contains(@class,'Order_Buttons')]//button[text()='Заказать']");
     // Кнопка "Да"
-    private By yesButton = By.xpath("//*[@id='root']/div/div[2]/div[5]/div[2]/button[2]");
+    private By yesButton = By.xpath("//div[contains(@class,'Order_Overlay__3KW-T')]//button[text()='Да']");
 
-    private By setPeriod = By.xpath("//*[@id='root']/div/div[2]/div[2]/div[2]/div[2]/div[2]");
+
 
 
     public OrderPage(WebDriver driver) {
@@ -65,8 +67,9 @@ public class OrderPage {
     }
     public void clickPeriod()
     {
-        driver.findElement(inputPeriod).click();
-        driver.findElement(setPeriod).click();
+        driver.findElement(rentalPeriod).click();
+
+        driver.findElement(rentalPeriodChoice).click();
     }
     public void clickOrder()
     {
